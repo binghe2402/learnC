@@ -10,16 +10,18 @@ int main(int argc, char const *argv[])
 {
     int a[10][10];
     printf("%p\n", a);
-    printf("%p\n\n", a + 1);         //移动了 10 * sizeof(int) = 40
+    printf("%p\n\n", a + 1); //移动了 10 * sizeof(int) = 40
 
     printf("%p\n", &a);
-    printf("%p\n\n", &a + 1);        //移动了 10 * 10 * sizeof(int) = 400
+    printf("%p\n\n", &a + 1); //移动了 10 * 10 * sizeof(int) = 400
 
     printf("%p\n", a[0]);
-    printf("%p\n\n", a[0] + 1);      //移动了 1 * sizeof(int) = 4 
+    printf("%p\n\n", a[0] + 1); //移动了 1 * sizeof(int) = 4
 
     printf("%p\n", &a[0]);
-    printf("%p\n\n", &a[0] + 1);     //移动了 10 * sizeof(int) = 40
+    printf("%p\n\n", &a[0] + 1); //移动了 10 * sizeof(int) = 40
+
+
 
     return 0;
 }
